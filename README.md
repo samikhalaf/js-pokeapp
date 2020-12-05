@@ -1,4 +1,4 @@
-# The Vanilla JavaScript (ES6) Pokémon API 🔥
+# **The Vanilla JavaScript (ES6) Pokémon API 🔥**
 
 ## Introduction
 
@@ -8,22 +8,27 @@ This is mainly an exercise for me to polish my skills as a front-end developer, 
 
 ## Key features
 
-- Plain JavaScript programming, no frameworks and no crazy libraries 💪🏿.
-- Web Responsive design, with SCSS as main language, compiled into CSS. 
-- Usage of BEM methodology for organising styles.
-- Data consumed from the http://pokeapi.co/, as it's a great RESTful API with tons of features and really well managed data.
+- Plain JavaScript programming, **no frameworks and no crazy libraries 💪🏿.**
+- **Web Responsive design**, with SCSS as main language, compiled into CSS.
+- Usage of **BEM methodology** for organising styles.
+- **Data consumed from the http://pokeapi.co/**, as it's a great RESTful API with tons of features and really well managed data.
+- Therefore, the app deals constantly with async code and multiple threads of execution.
 
 This app have mainly three parts:
 
 1. The pokemon list, showed them as cards, numbered throughout many pages.
 2. The Pokémon detail, displayed with custom modal windows.
-3. The favorites button, where you can select any pokemon and list them in the favorites button. Favorites will be stored in a cookie, so the next time you visit the page you still have those saved. 
+3. The favorites button, where you can select any pokemon and list them in the favorites button. Favorites will be stored in a cookie, so the next time you visit the page you still have those saved.
 
 Cool new features for the future:
 
 - Dark theme toggle button? That would be nice.
 - Filter for the Pokémon main list, with types: fire, water, electric, etc.
 
+## Run this app
+
+This is a simple HTML+CSS+JS app, so you can run it in a Apache / Nginx server, or simply run it with a development server in your IDE. I use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code and works nicely.
+
 ## Contact
 
-samikhalaf94@gmail.com 
+samikhalaf94@gmail.com
