@@ -1,13 +1,13 @@
-const api_base_url = "http://pokeapi.co/api/v2/";
+import { router } from "./router/index.routes.js";
 
-window.onload = function () {
-  fetch(`${api_base_url}pokemon`)
-    .then((res) => {
-      data = res.json();
-      console.log(data);
-      return data;
-    })
-    .catch((err) => {
-      return console.log(err, "Follón");
-    });
-};
+// This validates the switch statement in index.routes.js
+// and sets the default homepage to the home
+
+router(window.location.hash);
+
+// This listens to any change in the route and changes the
+// page content to show new pages #PrimitiveJSRouting
+
+window.addEventListener("hashchange", () => {
+  router(window.location.hash);
+});

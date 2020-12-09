@@ -1,0 +1,12 @@
+#app {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#content {
+  text-align: center;
+}
