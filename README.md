@@ -30,7 +30,7 @@ Cool new features for the future:
 
 This is a simple HTML+CSS+JS app, so you can run it in a Apache / Nginx server, or simply run it with a development server in your IDE. I use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code and works nicely.
 
-No Webpack or Babel is implemented on this app, so if you have problems changes are your web browser is not compatible. Download the latest version of Mozilla Firefox or Chromium and all those problems will be gone.
+No Webpack or Babel is implemented on this app, so if you have problems chances are your web browser is not compatible. Download the latest version of Mozilla Firefox or Chromium and all those problems will be gone.
 
 ## Contact
 
