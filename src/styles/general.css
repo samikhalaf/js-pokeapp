@@ -14,8 +14,15 @@
     url("../assets/fonts/pokemon-solid.ttf") format("truetype");
 }
 
+/* MAIN BODY */
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  margin: auto;
+
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
@@ -24,9 +31,34 @@ body {
   text-align: center;
 }
 
+/* NAVBAR */
+
 nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+
+  height: 5rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-link:hover {
+  text-decoration: none;
+  color: blueviolet;
 }
 
 #content {

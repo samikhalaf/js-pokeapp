@@ -11,7 +11,7 @@ const router = (route) => {
   content.innerHTML = "";
 
   switch (route) {
-    case "#/" || "": {
+    case "#/": {
       return content.appendChild(Home());
     }
     case "#/favorites": {
@@ -20,9 +20,9 @@ const router = (route) => {
     case "#/about": {
       return content.appendChild(About());
     }
-    default: {
-      return content.appendChild(NotFound());
-    }
+    // default: {
+    //   return content.appendChild(NotFound());
+    // }
   }
 };
 
