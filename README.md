@@ -1,5 +1,8 @@
 # **The Vanilla JavaScript (ES6) Pokémon API 🔥**
 
+
+![weird-gif](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c44ee19d-57cb-4fcb-adce-011ffb002fef/ddlbym1-a5e59044-03c3-4a01-bcfa-3f6e757a1c20.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYzQ0ZWUxOWQtNTdjYi00ZmNiLWFkY2UtMDExZmZiMDAyZmVmXC9kZGxieW0xLWE1ZTU5MDQ0LTAzYzMtNGEwMS1iY2ZhLTNmNmU3NTdhMWMyMC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.XSSAPWdpABAzVq2bjOkD2MnYUDSUTGq-OWs__tNRsm0)
+
 ## Introduction
 
 Hi there! I'm Sami Khalaf, and I've developed this app with plain HTML + CSS + Javascript ES6.
