@@ -54,6 +54,7 @@ nav {
 .navbar-link {
   text-decoration: none;
   color: black;
+  margin: 1rem;
 }
 
 .navbar-link:hover {
