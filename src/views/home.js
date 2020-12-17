@@ -12,17 +12,41 @@ export default () => {
       console.log(pokemons);
 
       pokemons.map((pokemon) => {
-        console.log(pokemon.url);
-        fetch(pokemon.url)
-        .then((res) => res.json()
-        .then((specificPokemon) => console.log(specificPokemon))
-
-        
+        fetch(pokemon.url).then((res) =>
+          res
+            .json()
+            .then((specificPokemon) => {
+              printCard(specificPokemon);
+            })
+            .catch((error) => {
+              console.error(error);
+              console.log("*** Something went wrong ***");
+            })
         );
       });
     });
 
-  const views = "<h1>Esto es la home</h1>";
+  const printCard = (pokemon) => {
+    const content = document.getElementById("content");
+
+    const pokemonCard = document.createElement("div");
+    pokemonCard.setAttribute("class", "pokemon-card");
+
+    content.append(pokemonCard);
+
+    const pokemonImage = document.createElement("img");
+    pokemonImage.setAttribute("src", pokemon.sprites.front_default);
+    pokemonImage.setAttribute("alt", pokemon.name);
+    pokemonImage.setAttribute("class", "pokemon-card--image");
+    pokemonCard.append(pokemonImage);
+
+    const pokemonName = document.createElement("p");
+    pokemonName.textContent = pokemon.name;
+    pokemonName.setAttribute("class", "pokemon-card--name");
+    pokemonCard.append(pokemonName);
+  };
+
+  const views = "<h1>soy la home</h1>";
 
   const divElement = document.createElement("div");
   divElement.innerHTML = views;
