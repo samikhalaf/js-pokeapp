@@ -25,6 +25,8 @@ body {
 
   font-family: "Lato", sans-serif;
   font-weight: 900;
+
+  background-color: rgb(221, 221, 221);
 }
 
 #app {
@@ -64,4 +66,34 @@ nav {
 
 #content {
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+
+.pokemon-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  width: 7rem;
+  margin: 1rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgb(134, 134, 134);
+  background-color: #ffffff;
+}
+
+.pokemon-card--image {
+  margin: 1rem 0 0 0;
+}
+
+.pokemon-card--name {
+  margin: 0rem 0rem 1rem 0rem;
+
+  font-weight: 500;
 }

@@ -1,8 +1,6 @@
 export default () => {
   const API_BASE_URL = "https://pokeapi.co/api/v2/";
 
-  window.onload = function () {};
-
   fetch(API_BASE_URL + "pokemon")
     .then((res) => res.json())
     .then((data) => {
@@ -13,23 +11,21 @@ export default () => {
 
       pokemons.map((pokemon) => {
         fetch(pokemon.url).then((res) =>
-          res
-            .json()
-            .then((specificPokemon) => {
-              printCard(specificPokemon);
-            })
-            .catch((error) => {
-              console.error(error);
-              console.log("*** Something went wrong ***");
-            })
+          res.json().then((specificPokemon) => {
+            printCard(specificPokemon);
+          })
         );
       });
+    })
+    .catch((error) => {
+      console.error(error);
+      console.log("*** Something went wrong ***");
     });
 
   const printCard = (pokemon) => {
     const content = document.getElementById("content");
 
-    const pokemonCard = document.createElement("div");
+    const pokemonCard = document.createElement("figure");
     pokemonCard.setAttribute("class", "pokemon-card");
 
     content.append(pokemonCard);
@@ -41,10 +37,16 @@ export default () => {
     pokemonCard.append(pokemonImage);
 
     const pokemonName = document.createElement("p");
-    pokemonName.textContent = pokemon.name;
+    pokemonName.textContent = capitalizeFirstLetter(pokemon.name);
     pokemonName.setAttribute("class", "pokemon-card--name");
     pokemonCard.append(pokemonName);
   };
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  console.log(capitalizeFirstLetter("foo")); // Foo
 
   const views = "<h1>soy la home</h1>";
 
