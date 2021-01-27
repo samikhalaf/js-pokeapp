@@ -64,6 +64,15 @@ nav {
   color: blueviolet;
 }
 
+.navbar-link--heart {
+  width: 0.8rem;
+}
+
+.navbar-link--heart:hover {
+  text-decoration: none;
+  color: blueviolet;
+}
+
 #content {
   text-align: center;
 
